@@ -1,5 +1,13 @@
 public class Main {
+
+    public static MainUtils utils;
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        utils = new MainUtils();
+
+        utils.print("Youssef");
+        utils.separator();
+
     }
 }
