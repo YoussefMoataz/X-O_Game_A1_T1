@@ -18,6 +18,8 @@ public class Main {
 //        testing.test3();
 //        testing.test4();
 //        testing.test5();
+//        testing.test6();
+        testing.test7();
 
     }
 }

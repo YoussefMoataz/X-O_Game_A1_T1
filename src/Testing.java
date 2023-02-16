@@ -79,4 +79,58 @@ public class Testing {
 
     }
 
+    public void test6(){
+
+        Board b = new Board(3);
+
+        b.update(0,0, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(0,1, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(0,2, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(1,0, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(1,1, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(1,2, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(2,0, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(2,1, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(2,2, MainUtils.O);
+        System.out.println(b.isDraw());
+
+        b.displayBoard();
+
+    }
+
+    public void test7(){
+
+        Board b = new Board(3);
+
+        b.update(0,0, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(0,1, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(0,2, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(1,0, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(1,1, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(1,2, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(2,0, MainUtils.O);
+        System.out.println(b.isDraw());
+        b.update(2,1, MainUtils.X);
+        System.out.println(b.isDraw());
+        b.update(2,2, MainUtils.X);
+        System.out.println(b.isDraw());
+
+        b.displayBoard();
+
+    }
+
 }

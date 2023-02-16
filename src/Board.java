@@ -100,6 +100,13 @@ public class Board {
     }
 
     public boolean isDraw() {
+
+        if (moves == n*n){
+            if (isWinner(MainUtils.X) || isWinner(MainUtils.O)){
+                return false;
+            }
+            return true;
+        }
         return false;
     }
 
