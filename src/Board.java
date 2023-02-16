@@ -9,11 +9,7 @@ public class Board {
         this.n = N;
         grid = new char[n][n];
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                grid[i][j] = MainUtils.DASH;
-            }
-        }
+        clearBoard();
 
     }
 
@@ -108,6 +104,16 @@ public class Board {
             return true;
         }
         return false;
+    }
+
+    public void clearBoard(){
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                grid[i][j] = MainUtils.DASH;
+            }
+        }
+
     }
 
 }
