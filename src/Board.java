@@ -97,8 +97,8 @@ public class Board {
 
     public boolean isDraw() {
 
-        if (moves == n*n){
-            if (isWinner(MainUtils.X) || isWinner(MainUtils.O)){
+        if (moves == n * n) {
+            if (isWinner(MainUtils.X) || isWinner(MainUtils.O)) {
                 return false;
             }
             return true;
@@ -106,7 +106,7 @@ public class Board {
         return false;
     }
 
-    public void clearBoard(){
+    public void clearBoard() {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -114,6 +114,10 @@ public class Board {
             }
         }
 
+    }
+
+    public Integer getBoardSize() {
+        return n;
     }
 
 }

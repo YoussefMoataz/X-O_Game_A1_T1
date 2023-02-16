@@ -1,12 +1,12 @@
 public class Testing {
 
     // Youssef
-    public void test1(){
+    public void test1() {
         Board b = new Board(3);
 
-        b.update(2,0, MainUtils.X);
-        b.update(2,1, MainUtils.X);
-        b.update(2,2, MainUtils.X);
+        b.update(2, 0, MainUtils.X);
+        b.update(2, 1, MainUtils.X);
+        b.update(2, 2, MainUtils.X);
 
         b.displayBoard();
 
@@ -14,13 +14,13 @@ public class Testing {
     }
 
     // Youssef
-    public void test2(){
+    public void test2() {
 
         Board b = new Board(3);
 
-        b.update(0,2, MainUtils.O);
-        b.update(1,2, MainUtils.O);
-        b.update(2,2, MainUtils.O);
+        b.update(0, 2, MainUtils.O);
+        b.update(1, 2, MainUtils.O);
+        b.update(2, 2, MainUtils.O);
 
         b.displayBoard();
 
@@ -29,13 +29,13 @@ public class Testing {
     }
 
 
-    public void test3(){
+    public void test3() {
 
         Board b = new Board(3);
 
-        b.update(0,0, MainUtils.X);
-        b.update(1,1, MainUtils.X);
-        b.update(2,2, MainUtils.X);
+        b.update(0, 0, MainUtils.X);
+        b.update(1, 1, MainUtils.X);
+        b.update(2, 2, MainUtils.X);
 
         b.displayBoard();
 
@@ -43,13 +43,13 @@ public class Testing {
 
     }
 
-    public void test4(){
+    public void test4() {
 
         Board b = new Board(3);
 
-        b.update(0,2, MainUtils.O);
-        b.update(1,1, MainUtils.O);
-        b.update(2,0, MainUtils.O);
+        b.update(0, 2, MainUtils.O);
+        b.update(1, 1, MainUtils.O);
+        b.update(2, 0, MainUtils.O);
 
         b.displayBoard();
 
@@ -57,90 +57,92 @@ public class Testing {
 
     }
 
-    public void test5(){
+    public void test5() {
 
         Board b = new Board(3);
 
-        b.update(0,2, MainUtils.O);
-        b.update(1,1, MainUtils.O);
-        b.update(2,0, MainUtils.O);
+        b.update(0, 2, MainUtils.O);
+        b.update(1, 1, MainUtils.O);
+        b.update(2, 0, MainUtils.O);
 
         b.displayBoard();
 
-        if (b.update(1, 2, MainUtils.X)){
+        if (b.update(1, 2, MainUtils.X)) {
             System.out.println("Done");
             b.displayBoard();
         }
 
-        if (!b.update(1, 1, MainUtils.X)){
+        if (!b.update(1, 1, MainUtils.X)) {
             System.out.println("Failed");
             b.displayBoard();
         }
 
     }
 
-    public void test6(){
+    public void test6() {
 
         Board b = new Board(3);
 
-        b.update(0,0, MainUtils.X);
+        b.update(0, 0, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(0,1, MainUtils.O);
+        b.update(0, 1, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(0,2, MainUtils.X);
+        b.update(0, 2, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(1,0, MainUtils.O);
+        b.update(1, 0, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(1,1, MainUtils.X);
+        b.update(1, 1, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(1,2, MainUtils.O);
+        b.update(1, 2, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(2,0, MainUtils.O);
+        b.update(2, 0, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(2,1, MainUtils.X);
+        b.update(2, 1, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(2,2, MainUtils.O);
+        b.update(2, 2, MainUtils.O);
         System.out.println(b.isDraw());
 
         b.displayBoard();
 
     }
 
-    public void test7(){
+    public void test7() {
 
         Board b = new Board(3);
 
-        b.update(0,0, MainUtils.X);
+        b.update(0, 0, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(0,1, MainUtils.O);
+        b.update(0, 1, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(0,2, MainUtils.X);
+        b.update(0, 2, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(1,0, MainUtils.O);
+        b.update(1, 0, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(1,1, MainUtils.X);
+        b.update(1, 1, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(1,2, MainUtils.O);
+        b.update(1, 2, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(2,0, MainUtils.O);
+        b.update(2, 0, MainUtils.O);
         System.out.println(b.isDraw());
-        b.update(2,1, MainUtils.X);
+        b.update(2, 1, MainUtils.X);
         System.out.println(b.isDraw());
-        b.update(2,2, MainUtils.X);
+        b.update(2, 2, MainUtils.X);
         System.out.println(b.isDraw());
 
         b.displayBoard();
 
     }
 
-    public void test8(){
+    public void test8() {
 
         Player p1 = new Player("Youssef", MainUtils.X);
         Player p2 = new Player("Other Player", MainUtils.O);
 
         Board board = new Board(3);
 
-        Game game = new Game(board, new Player[]{p1, p2});
+        Player[] players = {p1, p2};
+
+        Game game = new Game(board, players);
         game.playGame();
 
     }

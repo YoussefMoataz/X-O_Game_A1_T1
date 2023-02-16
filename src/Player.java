@@ -18,12 +18,12 @@ public class Player {
 
         Scanner moveScanner = new Scanner(System.in);
 
-        while (x < 0 && x > BoardSize - 1 && y < 0 && y > BoardSize - 1) {
-            System.out.println("Enter x-position");
-            x = moveScanner.nextInt();
-            System.out.println("Enter y-position");
-            y = moveScanner.nextInt();
-        }
+//        while (x < 0 && x > BoardSize - 1 && y < 0 && y > BoardSize - 1) {
+        System.out.println("Enter x-position");
+        x = moveScanner.nextInt();
+        System.out.println("Enter y-position");
+        y = moveScanner.nextInt();
+//        }
 
         return new Move(x, y);
     }
