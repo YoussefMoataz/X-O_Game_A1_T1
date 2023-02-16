@@ -13,10 +13,11 @@ public class Main {
         scanner = new Scanner(System.in);
 
         // start writing here
-        testing.test1();
-        testing.test2();
-        testing.test3();
-        testing.test4();
+//        testing.test1();
+//        testing.test2();
+//        testing.test3();
+//        testing.test4();
+//        testing.test5();
 
     }
 }

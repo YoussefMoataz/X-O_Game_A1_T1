@@ -1,6 +1,7 @@
 public class Board {
 
     private Integer n;
+    private int moves = 0;
     private char[][] grid;
 
     public Board(Integer N) {
@@ -16,12 +17,14 @@ public class Board {
 
     }
 
-    public void update(Integer x, Integer y, char s) {
+    public boolean update(Integer x, Integer y, char s) {
 
         if (grid[x][y] == MainUtils.DASH) {
             grid[x][y] = s;
+            moves++;
+            return true;
         }
-
+        return false;
     }
 
     public void displayBoard() {

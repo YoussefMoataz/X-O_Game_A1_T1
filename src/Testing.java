@@ -57,4 +57,26 @@ public class Testing {
 
     }
 
+    public void test5(){
+
+        Board b = new Board(3);
+
+        b.update(0,2, MainUtils.O);
+        b.update(1,1, MainUtils.O);
+        b.update(2,0, MainUtils.O);
+
+        b.displayBoard();
+
+        if (b.update(1, 2, MainUtils.X)){
+            System.out.println("Done");
+            b.displayBoard();
+        }
+
+        if (!b.update(1, 1, MainUtils.X)){
+            System.out.println("Failed");
+            b.displayBoard();
+        }
+
+    }
+
 }
