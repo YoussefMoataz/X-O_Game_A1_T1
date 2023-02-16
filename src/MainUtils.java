@@ -1,5 +1,6 @@
 public class MainUtils {
 
+    public final static char DASH = '-';
     public final static char X = 'x';
     public final static char O = 'o';
 

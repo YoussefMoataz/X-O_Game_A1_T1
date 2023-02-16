@@ -10,7 +10,7 @@ public class Board {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                grid[i][j] = '-';
+                grid[i][j] = MainUtils.DASH;
             }
         }
 
@@ -18,7 +18,9 @@ public class Board {
 
     public void update(Integer x, Integer y, char s) {
 
-        grid[x][y] = s;
+        if (grid[x][y] == MainUtils.DASH) {
+            grid[x][y] = s;
+        }
 
     }
 
