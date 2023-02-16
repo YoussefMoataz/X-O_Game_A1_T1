@@ -10,8 +10,9 @@ public class Main {
         utils = new MainUtils();
         scanner = new Scanner(System.in);
 
-        utils.print("Youssef");
-        utils.separator();
+        // start writing here
+        Board b = new Board(3);
+        b.displayBoard();
 
     }
 }
