@@ -49,7 +49,7 @@ public class Board {
                     break;
                 }
             }
-            if (won){
+            if (won) {
                 return true;
             }
         }
@@ -58,44 +58,40 @@ public class Board {
         for (int i = 0; i < n; i++) {
             won = true;
             for (int j = 0; j < n; j++) {
-                if (grid[j][i] != s){
+                if (grid[j][i] != s) {
                     won = false;
                     break;
                 }
             }
-            if (won){
+            if (won) {
                 return true;
             }
 
         }
 
-//        // check bottom right diagonal
-//        for (int i = 0; i < n; i++) {
-//            won = true;
-//            for (int j = 0; j < n; j++) {
-//                if (grid[i][i] != s) {
-//                    won = false;
-//                    break;
-//                }
-//            }
-//        }
-//        if (won) {
-//            return true;
-//        }
-//
-//        // check bottom left diagonal
-//        for (int i = 0; i < n; i++) {
-//            won = true;
-//            for (int j = 0; j < n; j++) {
-//                if (grid[i][i] != s) {
-//                    won = false;
-//                    break;
-//                }
-//            }
-//        }
-//        if (won) {
-//            return true;
-//        }
+        // check bottom right diagonal
+        won = true;
+        for (int i = 0; i < n; i++) {
+            if (grid[i][i] != s) {
+                won = false;
+                break;
+            }
+        }
+        if (won) {
+            return true;
+        }
+
+        // check bottom left diagonal
+        won = true;
+        for (int i = 0; i < n; i++) {
+            if (grid[n - i - 1][i] != s) {
+                won = false;
+                break;
+            }
+        }
+        if (won) {
+            return true;
+        }
 
         return false;
     }

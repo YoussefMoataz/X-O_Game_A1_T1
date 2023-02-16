@@ -28,4 +28,33 @@ public class Testing {
 
     }
 
+
+    public void test3(){
+
+        Board b = new Board(3);
+
+        b.update(0,0, MainUtils.X);
+        b.update(1,1, MainUtils.X);
+        b.update(2,2, MainUtils.X);
+
+        b.displayBoard();
+
+        System.out.println(b.isWinner(MainUtils.X));
+
+    }
+
+    public void test4(){
+
+        Board b = new Board(3);
+
+        b.update(0,2, MainUtils.O);
+        b.update(1,1, MainUtils.O);
+        b.update(2,0, MainUtils.O);
+
+        b.displayBoard();
+
+        System.out.println(b.isWinner(MainUtils.O));
+
+    }
+
 }

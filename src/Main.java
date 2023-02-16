@@ -14,6 +14,9 @@ public class Main {
 
         // start writing here
         testing.test1();
+        testing.test2();
+        testing.test3();
+        testing.test4();
 
     }
 }
