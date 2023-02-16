@@ -2,7 +2,7 @@ public class Game {
 
     private Integer turn;
 
-    public Game(Board b, Player[] p){
+    public Game(Board b, Player p1, Player p2){
 
     }
 
