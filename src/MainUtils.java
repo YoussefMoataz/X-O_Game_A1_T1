@@ -8,6 +8,7 @@ public class MainUtils {
         for (int i = 1; i <= 20; i++) {
             System.out.print('-');
         }
+        System.out.print('\n');
     }
 
 }
