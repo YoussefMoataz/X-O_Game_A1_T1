@@ -135,6 +135,14 @@ public class Testing {
 
     public void test8(){
 
+        Player p1 = new Player("Youssef", MainUtils.X);
+        Player p2 = new Player("Other Player", MainUtils.O);
+
+        Board board = new Board(3);
+
+        Game game = new Game(board, new Player[]{p1, p2});
+        game.playGame();
+
     }
 
 }

@@ -20,6 +20,7 @@ public class Main {
 //        testing.test5();
 //        testing.test6();
 //        testing.test7();
+        testing.test8();
 
     }
 }

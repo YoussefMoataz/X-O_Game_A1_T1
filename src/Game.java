@@ -1,12 +1,17 @@
 public class Game {
 
-    private Integer turn;
+    private Integer turn = 0;
+    private Board board;
+    private Player [] players;
 
-    public Game(Board b, Player p1, Player p2){
-
+    public Game(Board B, Player[] Players) {
+        this.board = B;
+        this.players = Players;
     }
 
-    public void playGame(){
+    public void playGame() {
+
+
 
     }
 
