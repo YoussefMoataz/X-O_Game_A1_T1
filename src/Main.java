@@ -3,16 +3,17 @@ import java.util.Scanner;
 public class Main {
 
     public static MainUtils utils;
+    public static Testing testing;
     public static Scanner scanner;
 
     public static void main(String[] args) {
 
         utils = new MainUtils();
+        testing = new Testing();
         scanner = new Scanner(System.in);
 
         // start writing here
-        Board b = new Board(3);
-        b.displayBoard();
+        testing.test1();
 
     }
 }
