@@ -12,6 +12,8 @@ public class Game {
     public void playGame() {
 
         Move currentMove;
+        Player currentPlayer;
+        Player otherPlayer;
 
         while (true) {
 
@@ -19,17 +21,29 @@ public class Game {
 
                 board.displayBoard();
 
-                if (!board.isWinner(players[1 - turn].getSymbol())) {
+                currentPlayer = players[turn];
+                otherPlayer = players[1 - turn];
 
-                    currentMove = players[turn].getMove(board.getBoardSize());
+                if (!board.isWinner(otherPlayer.getSymbol())) {
 
-                    if (board.update(currentMove.getX(), currentMove.getY(), players[turn].getSymbol())) {
+                    System.out.println(currentPlayer.getName() + " plays :");
+                    currentMove = currentPlayer.getMove();
+
+                    // end the game at (-1, -1) input
+                    if (currentMove.getX() == -1 && currentMove.getY() == -1) {
+                        System.out.println("Thanks for playing !");
+                        break;
+                    }
+
+                    // change player iff valid move is made
+                    if (board.update(currentMove.getX(), currentMove.getY(), currentPlayer.getSymbol())) {
                         turn = 1 - turn;
                     }
 
 
                 } else {
-                    System.out.println(players[1 - turn].getName() + " wins !");
+                    System.out.println(otherPlayer.getName() + " wins !");
+
                     break;
                 }
 

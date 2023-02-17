@@ -15,6 +15,7 @@ public class Board {
 
     public boolean update(Integer x, Integer y, char s) {
 
+        // check move not made before
         if (grid[x][y] == MainUtils.DASH) {
             grid[x][y] = s;
             moves++;
@@ -68,7 +69,7 @@ public class Board {
 
         }
 
-        // check bottom right diagonal
+        // check bottom right diagonal - done
         won = true;
         for (int i = 0; i < n; i++) {
             if (grid[i][i] != s) {
@@ -80,7 +81,7 @@ public class Board {
             return true;
         }
 
-        // check bottom left diagonal
+        // check bottom left diagonal - done
         won = true;
         for (int i = 0; i < n; i++) {
             if (grid[n - i - 1][i] != s) {
@@ -108,16 +109,13 @@ public class Board {
 
     public void clearBoard() {
 
+        // resets the board
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 grid[i][j] = MainUtils.DASH;
             }
         }
 
-    }
-
-    public Integer getBoardSize() {
-        return n;
     }
 
 }

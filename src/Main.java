@@ -20,7 +20,24 @@ public class Main {
 //        testing.test5();
 //        testing.test6();
 //        testing.test7();
-        testing.test8();
+//        testing.test8();
+//        testing.test9();
+//        testing.test10();
+
+        Scanner namesScanner = new Scanner(System.in);
+
+        // get players' data at runtime
+        utils.print("Enter first player's name :");
+        Player p1 = new Player(namesScanner.nextLine(), MainUtils.X);
+        utils.print("Enter second player's name :");
+        Player p2 = new Player(namesScanner.nextLine(), MainUtils.O);
+
+        Board board = new Board(3);
+
+        Player[] players = {p1, p2};
+
+        Game game = new Game(board, players);
+        game.playGame();
 
     }
 }
