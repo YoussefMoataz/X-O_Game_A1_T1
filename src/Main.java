@@ -32,7 +32,7 @@ public class Main {
         utils.print("Enter second player's name :");
         Player p2 = new Player(namesScanner.nextLine(), MainUtils.O);
 
-        Board board = new Board(3);
+        TicTacToeBoard board = new TicTacToeBoard(3);
 
         Player[] players = {p1, p2};
 
@@ -40,4 +40,5 @@ public class Main {
         game.playGame();
 
     }
+
 }

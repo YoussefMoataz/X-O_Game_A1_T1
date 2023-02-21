@@ -4,7 +4,7 @@ public class Testing {
 
     // Youssef
     public void test1() {
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(2, 0, MainUtils.X);
         b.update(2, 1, MainUtils.X);
@@ -18,7 +18,7 @@ public class Testing {
     // Youssef
     public void test2() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 2, MainUtils.O);
         b.update(1, 2, MainUtils.O);
@@ -33,7 +33,7 @@ public class Testing {
 
     public void test3() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 0, MainUtils.X);
         b.update(1, 1, MainUtils.X);
@@ -47,7 +47,7 @@ public class Testing {
 
     public void test4() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 2, MainUtils.O);
         b.update(1, 1, MainUtils.O);
@@ -61,7 +61,7 @@ public class Testing {
 
     public void test5() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 2, MainUtils.O);
         b.update(1, 1, MainUtils.O);
@@ -83,7 +83,7 @@ public class Testing {
 
     public void test6() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 0, MainUtils.X);
         System.out.println(b.isDraw());
@@ -110,7 +110,7 @@ public class Testing {
 
     public void test7() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 0, MainUtils.X);
         System.out.println(b.isDraw());
@@ -137,7 +137,7 @@ public class Testing {
 
     public void test8() {
 
-        Board b = new Board(3);
+        TicTacToeBoard b = new TicTacToeBoard(3);
 
         b.update(0, 0, MainUtils.X);
         System.out.println(b.isDraw());
@@ -169,7 +169,7 @@ public class Testing {
         Player p1 = new Player("Youssef", MainUtils.X);
         Player p2 = new Player("Other Player", MainUtils.O);
 
-        Board board = new Board(3);
+        TicTacToeBoard board = new TicTacToeBoard(3);
 
         Player[] players = {p1, p2};
 
@@ -188,7 +188,7 @@ public class Testing {
         System.out.println("Enter second player's name :");
         Player p2 = new Player(namesScanner.nextLine(), MainUtils.O);
 
-        Board board = new Board(3);
+        TicTacToeBoard board = new TicTacToeBoard(3);
 
         Player[] players = {p1, p2};
 

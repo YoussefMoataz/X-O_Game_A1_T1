@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Player {
 
-    private String name;
-    private char symbol;
+    private final String name;
+    private final char symbol;
 
     public Player(String Name, char Symbol) {
         this.name = Name;

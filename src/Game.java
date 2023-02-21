@@ -1,10 +1,10 @@
 public class Game {
 
     private Integer turn = 0;
-    private Board board;
-    private Player[] players;
+    private final TicTacToeBoard board;
+    private final Player[] players;
 
-    public Game(Board B, Player[] Players) {
+    public Game(TicTacToeBoard B, Player[] Players) {
         this.board = B;
         this.players = Players;
     }

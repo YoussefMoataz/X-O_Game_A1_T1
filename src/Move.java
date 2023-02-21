@@ -1,6 +1,6 @@
 public class Move {
-    private Integer x;
-    private Integer y;
+    private final Integer x;
+    private final Integer y;
 
     public Move(Integer X, Integer Y) {
         this.x = X;
