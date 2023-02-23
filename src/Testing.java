@@ -12,7 +12,7 @@ public class Testing {
 
         b.displayBoard();
 
-        System.out.println(b.isWinner(MainUtils.X));
+        System.out.println(b.isWinner());
     }
 
     // Youssef
@@ -26,7 +26,7 @@ public class Testing {
 
         b.displayBoard();
 
-        System.out.println(b.isWinner(MainUtils.O));
+        System.out.println(b.isWinner());
 
     }
 
@@ -41,7 +41,7 @@ public class Testing {
 
         b.displayBoard();
 
-        System.out.println(b.isWinner(MainUtils.X));
+        System.out.println(b.isWinner());
 
     }
 
@@ -55,7 +55,7 @@ public class Testing {
 
         b.displayBoard();
 
-        System.out.println(b.isWinner(MainUtils.O));
+        System.out.println(b.isWinner());
 
     }
 
