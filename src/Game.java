@@ -24,7 +24,7 @@ public class Game {
                 currentPlayer = players[turn];
                 otherPlayer = players[1 - turn];
 
-                if (!board.isWinner()) {
+                if (!board.isWinner(otherPlayer.getSymbol())) {
 
                     System.out.println(currentPlayer.getName() + " plays :");
                     currentMove = currentPlayer.getMove();
